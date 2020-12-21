@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rides Electro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</head>
+<body>
+    <img id="logo" src="logo.svg" alt="">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#section2">Models</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+
+      <div>
+          <img id="intro" src="intro.svg" alt="">
+      </div>
+
+<div style="text-align: center; margin-top: 110px; margin-bottom: 110px;">
+    <img src="use code.png" alt="">   
+    <p style="    position: relative;
+    margin: -111px 0px 0px 503px;
+    color: #3241CD;
+    font-size: 36px;
+    font-weight: 900;">36H34Y</p> 
+</div>
+<div>
+<div class="grid-container">
+    <div class="grid-item1">
+        <p style="color: #3241CD;">Posted on Dec 18, 2020</p>
+        <p>Book now to avail Christmas and<br>New Years exciting offers with grate discounts.</p>
+        <button style="border-style: none;border-radius: 30px;width: 300px; height: 80px; font-size: 24px; color: white; background-color: #6B76D3;">Call Now - 9867015183</button>
+    </div>
+    <div class="grid-item2">
+        <img style="width: 475px;" src="scoot.png" alt="">
+</div>
+</div>
+
+<p  id="section2" style="text-align: center;margin-top: 80px; margin-bottom: 80px; font-size: 30px;"><b>Browse by Model</b></p>>
+
+<div>
+    <a href=""><img src="racer.png" alt=""></a>
+    <a href=""><img src="hawk.png" alt=""></a>
+    <a href=""><img src="hawk+.png" alt=""></a>
+    <a href=""><img src="EVOQIS.png" alt=""></a> 
+</div>
+
+<div class="more">
+</div>
+
+<p id="gallery" style="text-align: center;margin-top: 80px; margin-bottom: 80px; font-size: 30px;"><b>Gallery</b></p>>
+
+<div style="padding: 0%;">
+    <a href=""><img style="margin: 30px;" src="pic1.png" alt=""></a>
+    <a href=""><img style="margin: 30px;" src="pic2.png" alt=""></a>
+    <a href=""><img style="margin: 30px;" src="pic3.png" alt=""></a>
+    <a href=""><img style="margin: 30px;" src="pic4.png" alt=""></a> 
+    <a href=""><img style="margin: 30px;" src="pic5.png" alt=""></a> 
+</div>
+
+<p id="location" style="text-align: center;margin-top: 80px; margin-bottom: 80px; font-size: 30px;"><b>Location</b></p>
+<div style="text-align: center;">
+    <iframe width="600" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=600&amp;height=450&amp;hl=en&amp;q=60ft%20Road,%20Samta%20nagar,nr%20KT%20wadi%20hall,%20Vasai%20west,%20Maharashtra%20vasai-virar+(Rides%20Electro%20e%20scooters%20and%20bike)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://embedmaps.net'>google widgets</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d5235ed6188a87d945d0efffafc47ccba8e0907d'></script>
+</div>
+
+
+<div style="text-align: center;">
+    <div class="add-con">
+        <div class="add-con-item">
+            <p style="text-align: center;"><b>Address</b></p> 
+            <p style="text-align: center;">60ft Road, Samta nagar,nr <br>KT wadi hall
+                Vasai west, <br>Maharashtra 401202<br>
+                India</p>
+                <button style="border-style: none;border-radius: 30px;width: 300px; height: 80px; font-size: 24px; color: white; background-color: #6B76D3;">Get Directions</button>
+        </div>
+        <div id="contact" class="add-con-item">
+            <p style="text-align: center;"><b>Contact us</b></p>
+            <p>Call - 089280 95690</p>
+            <p>Email - priyankarahul.2008@gmail.com</p>
+            <button style="border-style: none;border-radius: 30px;width: 300px; height: 80px; font-size: 24px; color: white; background-color: #6B76D3;">Call Now - 9867015183</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

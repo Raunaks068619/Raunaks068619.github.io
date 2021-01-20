@@ -2,10 +2,14 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
+.example::-webkit-scrollbar {
+  display: none;
+}
+
 
 ul {
     list-style-type: none;
-    margin: 5px 135px 0px 0px;
+    margin: 5px 15px 0px 0px;
     padding: 0;
     overflow: hidden;
     float: right;
@@ -25,6 +29,7 @@ ul {
   }
   
   #logo{
+   
       margin-left: 90px;
       position: relative;
   }
@@ -35,7 +40,7 @@ ul {
   }
 
   .grid-container {
-    margin-top: 185px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
@@ -50,7 +55,7 @@ ul {
 
   .grid-item2 {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 0px 55px;
+    padding: 22px 69px;
     font-size: 30px;
     text-align: left;
     width: 420px;
@@ -75,4 +80,69 @@ ul {
     padding: 30px;
     font-size: 20px;
     
+  }
+
+  .topnav{
+    display: none;
+  }
+
+  #split{
+    width: 100%;
+    height: 135vh;
+  }
+
+  @media screen and (max-width:600px){
+    #logo{
+      display: none;
+    }
+
+    #moblogo{
+      width: 200px;
+    }
+
+    .nav{
+      display: none;
+    }
+
+    .topnav {
+      display: block;
+      overflow: hidden;
+      background-color:#febc02;
+      position: relative;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+    
+    .topnav a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    .active {
+      background-color: white;
+      color: white;
+    }
+
+    #split{
+      width: 100%;
+      height: 70vh;
+    }
   }

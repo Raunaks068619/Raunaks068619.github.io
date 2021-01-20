@@ -1,6 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    
+    margin: 0px;
 }
 .example::-webkit-scrollbar {
   display: none;
@@ -92,6 +92,10 @@ ul {
   }
 
   @media screen and (max-width:600px){
+    body{
+      width: 100%;
+      margin: 0%;
+    }
     #logo{
       display: none;
     }

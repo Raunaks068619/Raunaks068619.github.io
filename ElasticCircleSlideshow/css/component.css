@@ -363,6 +363,12 @@
 }
 
 @media screen and (max-width: 50em) {
+
+	.action--close{
+		top: 30px;
+    right: 26px;
+	}
+
 	.deco--title {
 		right: -50px;
 		left: -50px;
@@ -392,7 +398,7 @@
 		justify-content: flex-start;
 	}
 	.slide__img--large {
-		margin: 0 auto 2em;
+		margin:auto 2em;
 	}
 	.slide__title--preview,
 	.slide__title--main {

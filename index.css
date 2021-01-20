@@ -34,9 +34,13 @@ ul {
       position: relative;
   }
  
-  #intro{
+  #bigintro{
     margin-top: 10px;
     width: 100%;
+  }
+
+  #smallintro{
+    display: none;
   }
 
   .grid-container {
@@ -92,6 +96,17 @@ ul {
   }
 
   @media screen and (max-width:600px){
+
+    #bigintro{
+      display: none;
+    }
+
+    #smallintro{
+      display: block;
+       margin-top: 0px;
+        width: 100%;
+      }
+
     body{
       width: 100%;
       margin: 0%;

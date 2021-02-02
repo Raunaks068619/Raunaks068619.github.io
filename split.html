@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Ideas for revealing content in a schematic box look." />
+		<meta name="keywords" content="javascript, plugin, reveal, effect, demo, web development, web design, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/revealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/pater.css" />
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-split loading">
+		<svg class="hidden">
+			
+		</svg>
+		<main>
+			<section style="text-align: center;" class="content">
+				<div class="dual">
+					<div class="dual__inner" id="rev-1">
+						<div class="dual__half"></div>
+					</div>
+					<div
+					 class="dual__content">
+					<p>	Rides Electro is a E- BIKES and SCOOTERS showroom located in vasai collaberating with ODESSEY motors,
+				Visit today or Contact us for getting exciting offers on </p><p id="blue">Ride Electro E bikes and scooters</p>
+
+					</div>
+				</div>
+				
+			</section>
+			
+			<!-- Related demos -->
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			// Fake loading.
+			setTimeout(init, 1000);
+
+			function init() {
+				document.body.classList.remove('loading');
+
+				var splitContent = document.querySelector('.dual__content'),
+					rev1 = new RevealFx(document.querySelector('#rev-1'), {
+						revealSettings : {
+							bgcolor: '#2d2c2c',
+							direction: 'rl',
+							duration: 300,
+							easing: 'easeInOutCirc',
+							coverArea: 50,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+								splitContent.classList.add('dual__content--show');
+							}
+						}
+					});
+
+				rev1.reveal();
+
+				
+				watcher.enterViewport(function() {
+					rev2.reveal();
+					watcher.destroy();
+				});
+			}
+		})();
+		</script>
+	</body>
+</html>
